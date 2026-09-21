@@ -1,0 +1,147 @@
+#root {
+  min-height: 100vh;
+}
+
+main {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 32px 0 60px;
+}
+
+header {
+  margin-bottom: 28px;
+  padding: 32px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #172554, #2563eb);
+  color: white;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #dbeafe;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 26px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #172554;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #374151;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: white;
+  color: #111827;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+form button {
+  align-self: end;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+article {
+  margin-top: 16px;
+  padding: 20px;
+  border: 1px solid #dbe4f0;
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+article h3 {
+  margin: 0 0 14px;
+  color: #172554;
+}
+
+article p {
+  margin: 7px 0;
+}
+
+article label {
+  max-width: 220px;
+  margin: 14px 0;
+}
+
+article button {
+  margin-top: 8px;
+  padding: 9px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+article button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 700px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 24px;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
